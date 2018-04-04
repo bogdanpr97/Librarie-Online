@@ -1,0 +1,43 @@
+f
+#mainart{
+	width: 100%;
+}
+#mainart ul li{
+	font-size: 150%;
+	text-indent: 5%;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#abonati{
+	padding: 15px;
+	color:#ffffff;
+	background:#35424a;
+}
+#abonati h1{
+	font-size: 100%;
+  float: left;
+  padding-top: 10px;
+}
+#abonati form{
+	float: right;
+	margin-top: 15px;
+}
+#abonati input[type="email"]{
+	padding: 4%;
+	height: 25px;
+	width: 75%;
+}
+footer{
+	
+}
+	@media screen and (max-width: 300px){
+	#mainart ul li{
+	font-size: 60%;
+    }
+    #abonati form{
+    	font-size: 50%;
+    	margin:0 auto;
+    	float: left;
+	 }
+    }

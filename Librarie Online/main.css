@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+	margin:0;
+	border:0;
+	padding: 0;
+}
+body{
+	font-family: 'Spectral SC', serif;
+	font-size: 18px;
+	background-color: #CECDCF;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+h1{
+	font-size: 250%;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2%;
+
+}
+h2{
+	font-size: 230%;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2%;
+}
+h3{
+	font-size: 200%;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2%;
+}
+p{
+	font-size: 160%;
+	line-height: 150%;
+	padding: 3%;
+	text-indent: 2%;
+	text-align: justify;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: -4px;
+}
+.container{
+    padding-bottom: 10%;
+	margin: 0 auto;
+    overflow: hidden;
+	}
+#nav{
+	background-color: #222;
+
+}
+#nav_wrapper{
+	
+	/*width: 1300px;*/
+	float: right;
+	margin-top: 0px;
+	text-align: center;
+	border: 1px grey;
+}
+#nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#nav ul li{
+	display: inline-block;
+
+}
+#nav ul li:hover{
+background-color: #333;
+	transition: all 0.75s linear;
+}
+#nav ul li a,visited{
+	color:#ccc;
+	display: block;
+	padding: 15px ;
+	text-decoration: none;
+}
+#nav ul li:hover ul{
+	display: block;
+	transition: all 0.75s linear;
+    overflow: visible ;
+  
+}
+#nav ul ul{
+	display: none;
+	position: absolute;
+	background-color: #333;
+	border: 5px solid #222;
+	border-top: 0;
+    width: 30%;
+    margin-left: -1.2%;
+}
+#nav ul ul li{
+	display: block;
+}
+#nav ul ul li a,visited{
+	color:#ccc;
+}
+#nav ul ul li a:hover{
+	color: #099;
+	transition: all 0.75s linear;
+}
+
+
+header{
+	background-color: #222;
+	
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+	}
+header #branding{
+	overflow: hidden;
+
+     float: left;
+     text-align: center;
+}
+header #branding h1{
+	float: left;
+	margin: 0 auto;
+    color: #e8491d;
+    padding-top: 0;
+}
+header .current a{
+	color:#e8491d;
+	font-weight: bold;
+}
+#showcase{
+    overflow: hidden;
+	min-height: 300px;
+
+	background: url("img/books2.jpg");
+	text-align: center;
+    
+    margin: 0 auto;
+}
+#showcase p{
+	filter: brightness(50%);
+}
+#showcase a{
+	text-decoration: none;
+	font-weight: bold;
+	color: lightblue;
+}
+#showcase a:hover{
+	color: white;
+}
+#showcase h1{
+	margin: 0 auto;
+padding-top: 100px;
+font-size: 55px;
+ 
+}
+#showcase p{
+	font-size: 20px;
+	
+}
+
+.inner-wrapper{
+	overflow: hidden;
+	background-color: #669999;
+    float: left;
+	color: white;
+	width: 100%;
+	margin: 0px;
+	height: 100%;
+	
+}
+article{
+	float:left;
+	margin: 0 auto;
+	width: 50%;
+	height: 100%;
+}
+#noutati{
+	
+    height: 100%;
+    margin: 0 auto;
+}
+#scris{
+	background-color: #003333;
+}
+aside{
+	float: right;
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	height: auto;
+}
+#anunt{
+	background-color: #003333;
+	float: left;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+#video{
+	width: 50%;
+	
+}
+footer{
+	background-color: #e8491d;
+	clear: left;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0 auto;
+	margin-bottom: 0;
+	border-top: 2px solid black;
+}	
+footer p{
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+	
+}
+/*-------Produse----*/
+.poze{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin:0 auto;
+  height: auto;
+}
+table,th,td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 1%;
+	width: 50%;
+}
+#tabelPreturi{
+	background-color: #f1f1c1;
+	margin: 0 auto;
+}
+.image{
+	transition: opacity 0.5s;
+	opacity: 0.5;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	width: 32%;
+	height: 20%;
+}
+.image:hover{
+	opacity: 1;
+}
+/*------------------Media!!!!!--------*/
+@media screen and (max-width: 768px){
+	h1{
+		font-size: 200%;
+	}
+	h2{
+		font-size: 180%;
+
+	}
+	h3{
+		font-size: 125%;
+	}
+	p{
+		font-size: 80%;
+	}
+	aside{
+		width: 100%;
+	}
+    #noutati{
+    	width: 100%;
+    }
+    #scris{
+    	width: 100%;
+    }
+    #anunt{
+    	width: 100%;
+    }
+    .container{
+    	width: 100%;
+    }
+    #showcase h2{
+       font-size: 150%;
+    }
+    #noutati h2{
+    	font-size: 150%;
+    }
+    #nav ul li a,visited{
+    	padding: 5px;
+    }
+}
+
+@media screen and (max-width: 370px){
+
+	h1{
+		font-size: 80%;
+	}
+	h2{
+		color: red;
+		font-size: 100%;
+	}
+	#nav ul li{
+		display: block;
+		font-size: 60%;
+		text-align: center;
+		margin-right: 12vw;
+	}
+	#showcase{
+		min-height: 200px;
+	}
+	aside{
+		width: 100%;
+	}
+	#noutati{
+    	width: 100%;
+    }
+    #scris{
+    	width: 100%;
+    }
+    #anunt{
+    	width: 100%;
+    }
+	#showcase h2{
+		font-size: 90%;
+	}
+	#noutati h2{
+		font-size: 50%;
+	}
+    aside h2{
+    	font-size: 50%;
+        
+       
+    }
+    .image{
+    	width: 100%;
+    }
+	p{
+		font-size: 60%;
+        letter-spacing: 1px;
+	}
+	table th,tr,td{
+		font-size: 70%;
+	}
+	
+    #abonati form{
+    	width: 60%;
+    	float: left;
+    }
+}
